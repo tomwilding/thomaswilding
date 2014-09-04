@@ -1,6 +1,5 @@
 body {
-  background: url(../img/xv.png);
-  background-attachment: fixed
+  background: url(../img/satinweave.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +17,10 @@ p {
 hr {
   border-color: #999999;
   max-width: 400px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .brand,
@@ -80,8 +83,14 @@ hr {
   margin: 0 auto 0;
 }
 
+.image-middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
 footer {
-  background: #fff;
   background: rgba(255,255,255,0.9);
 }
 
@@ -170,6 +179,12 @@ footer p {
     }
 }
 
+@media (max-width: 992px) {
+  .center {
+    text-align: center;
+  }
+}
+
 .item {
   padding-top: 10px;
 }
@@ -178,6 +193,60 @@ footer p {
   padding-bottom: 10px; 
 }
 
-.carousel-control {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) !important;
+.card {
+  box-shadow: 1px 1px 3px #888888;
+}
+
+.silver {
+  color: silver;
+}
+
+.gray {
+  color: gray;
+  font-size: 14px;
+}
+
+
+.contactBar {
+  -webkit-box-shadow: 0 1px 0 #fff inset;
+  -moz-box-shadow: 0 1px 0 #fff inset;
+  box-shadow: 0 1px 0 #fff inset;
+  clear: both;
+  border-top: 1px #ccc;
+  padding: 15px 0 0 21px;
+  text-align: center;
+}
+
+.card hr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+.glyphicon {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.contactPoint {
+  color: gray;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.cvHeader {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.spanCenter {
+  display:table;
+  margin:0 auto;
+}
+
+.tblImg {
+  margin-left: 10px;
 }
